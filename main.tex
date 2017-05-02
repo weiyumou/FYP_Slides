@@ -1,0 +1,270 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{textcomp}
+\usepackage{animate}
+\usepackage{subcaption}
+\usepackage[super]{nth}
+
+\usetheme{Madrid}
+\setbeamertemplate{caption}[numbered]
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Agenda}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\title[CZ4079 FYP Presentation] {CZ4079 Final Year Project}
+\subtitle{A Machine Learning-Based Approach to \\Time-Dependent Shortest Path Queries}
+\author[Wei Yumou]
+{Wei Yumou}
+\institute[]{School of Computer Science and Engineering \\ Nanyang Technological University}
+\date[\today]{}
+\logo{\includegraphics[height=1.5cm]{logo}}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction: Problem}
+\begin{itemize}
+	\item <1-> A \textbf{dynamic road network} $G=(V,E)$ with a time-dependent weight function $w : E,t \rightarrow \mathbb{R}$
+	\item <2-> A \textbf{query} $Q(u,v,t)$ that asks for a shortest path from $u$ to $v$ departing at time moment $t$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction: General Approach}
+\begin{itemize}
+	\item <1-> Traditional \textbf{Bellman-Ford or Dijkstra's algorithm}	do not work with dynamic edge weights (``the curse of traditionality'')
+	\item <2-> The new \textbf{machine learning-based approach} draws on collective wisdom of thousands of taxi drivers
+	\item <3-> \textbf{Unsupervised learning} is employed to figure out the time-dependent edge costs
+	\item <4-> A modified Dijkstra's algorithm calculates a shortest path on the fly
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction: Challenges}
+\begin{itemize}
+	\item <1-> Arbitrary $u$ and $v$
+	\item <2-> Sparse sample points
+	\item <3-> Limited GPS accuracy
+\end{itemize}
+\end{frame}
+
+\section{Preliminary Processing}
+\begin{frame}
+\frametitle{Introduction2}
+%\begin{figure}[h!]
+%\includegraphics[scale=0.44]{rounds}
+%\centering
+%\caption{NCAA Basketball Tournament Schedule}\label{Fig:tour_schedule}
+%\end{figure}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Data Set}
+%\begin{table}[h!]
+%\centering
+%\resizebox{\columnwidth}{!}{
+%\begin{tabular}{ | l | l | l | }
+%\hline
+%\textbf{Field} & \textbf{Description} & \textbf{Example} \\ \hline
+%Season & The year of the final tournament & 2014 \\ \hline
+%Daynum & The day the game was played on & 20 \\ \hline
+%Wteam & Id number of the winning team & 1260\\ \hline
+%Wscore & No. of points scored by the winning team & 77\\ \hline
+%Lteam & Id number of the losing  team & 1288\\ \hline
+%Lscore & No. of points scored by the losing team & 71\\ \hline
+%Wloc & Location of the winning team: H (home), A (visiting), N (neutral) & H\\ \hline
+%Numot & No. of overtime periods in the game & 0\\ \hline
+%\end{tabular}}
+%\caption{RegularSeasonCompactResults.csv}\label{Ta:regular_res}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Data Set}
+%\begin{table}[h!]
+%\centering
+%\resizebox{\columnwidth}{!}{
+%\begin{tabular}{ | l | l | l | }
+%\hline
+%\textbf{Field} & \textbf{Description} & \textbf{Example} \\ \hline
+%Id & season\_team1id\_team2id & 2013\_1104\_1129 \\ \hline
+%Pred & The predicted probability that the first team will win & 0.5 \\ \hline
+%\end{tabular}}
+%\caption{SampleSubmission.csv}\label{Ta:sample_sub}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Approach}
+%\begin{itemize}
+%	\item Quantify the skill level of all teams
+%	\item Measure the difference between the skills of each team
+%	\item Predict outcomes of matches between teams
+%	\item Logistic regression (TensorFlow)
+%	\item TrueSkill\texttrademark
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Logistic Regression}
+%\begin{itemize}
+%\item Extract seeds for all teams
+%	\begin{itemize} \item Seed 1 $>$ Seed 15 \end{itemize}
+%\item Match seeds to teams
+%\item Get difference between the seeds
+%	\begin{itemize} \item Team 2 $-$ Team 1 \end{itemize}
+%\item Train model with seed difference and winning team
+%\item $y = wx + b$
+%	\begin{itemize} \item $w$: 0.150500
+%				\item $b$: 0.039660 \end{itemize}
+%\item Sigmoid activation function
+%\item Result of 0.588910
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Logistic Regression}
+%\begin{itemize}
+%	\item $x$-axis: Difference in seed
+%	\item $y$-axis: Probability of Team 1 winning
+%\end{itemize}
+%
+%\begin{figure}[h!]
+%\begin{subfigure}{0.43\textwidth}
+%\includegraphics[width = .9\linewidth]{logic1} 
+%\end{subfigure}
+%\begin{subfigure}{0.43\textwidth}
+%\includegraphics[width = .9\linewidth]{logic2} 
+%\end{subfigure}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{TrueSkill\texttrademark: Introduction}
+%\begin{itemize}
+%	\item A player-rating system developed by Microsoft Research to rank players on Xbox LIVE for matchmaking. 
+%	\item A form of Bayesian Inference
+%	\item Key idea to model each player's ``true skill'' as a Gaussian distribution $N\sim(s_{i} | \mu_{i}, \sigma_{i}^{2})$ (prior)
+%	\item The outcome denoted as $r$ (evidence) $\rightarrow P(r | s_{i})$ (likelihood)
+%\end{itemize}
+%\begin{equation}
+%P(s_{i} | r) = \frac{P(r | s_{i})P(s_{i})}{P(r)}
+%\end{equation}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{TrueSkill\texttrademark: How It Works}
+%\begin{itemize}
+%	\item Start with $N_{1}\sim(\mu_{1} = 25, \sigma_{1} = \frac{25}{3})$ and $N_{2}\sim(\mu_{2} = 25, \sigma_{2} = \frac{25}{3})$
+%	\item As the tournament goes, TrueSkill\texttrademark~updates each player's skill based on match outcomes ($Y = 1$ when Player 1 win)
+%	\item The wining probability of \textbf{an upcoming match} can be calculated based on each player's true skill distribution
+%\begin{equation}
+%P(Y = 1) = \Phi(\frac{\mu_{1} - \mu_{2}}{\sqrt{2\beta^{2} + \sigma_{1}^{2} + \sigma_{2}^{2}}})
+%\end{equation}
+%where $\Phi$ is the standard Gaussian CDF and $\beta$ represents performance variations around skill (default value $\sigma/2$)
+%\end{itemize}
+%\end{frame}
+%
+%%\begin{frame}
+%%\frametitle{TrueSkill\texttrademark: Demo}
+%%\animategraphics[loop,controls,width=0.7\linewidth]{2}{images/trueskill_demo/}{0}{36}
+%%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Models}
+%\begin{itemize}
+%	\item{MOV = Margin of Victory}
+%	\item{HCA = Home Court Advantage}
+%	\item{OAD = Overtime as Draw}
+%\end{itemize}
+%\begin{table}[h!]
+%\centering
+%\resizebox{\columnwidth}{!}{
+%\begin{tabular}{ | l | l | l |}
+%\hline
+%\textbf{Model} & \textbf{Description} & \textbf{Parameters} \\ \hline
+%Na\"{i}ve TrueSkill & Bare TrueSkill\texttrademark & $\mu = 25, \sigma = 25/3$ \\ \hline
+%MOV Unfolding & If MOV $>m$, recursively treat it as multiple victories & $m$ = 11\\ \hline
+%HCA & Deduct $h$ scores if victory at home court & $h$ = 1.5 \\ \hline
+%OAD & Treat overtime as having equal scores & -\\ \hline
+%\end{tabular}}
+%\caption{Models}\label{Ta:model}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Evaluation: Log loss}
+%\begin{equation}
+%LogLoss = -\frac{1}{n}\sum_{i=1}^{n}[y_{i}\ln(\hat{y_{i}}) + (1 - y_{i})\ln(1 - \hat{y_{i}})]
+%\end{equation}
+%where
+%\begin{itemize}
+%	\item $n$ is the number of games played 
+%	\item $\hat{y_{i}}$ is the predicted probability of team 1 beating team 2
+%	\item $y_{i}$ is 1 if team 1 wins, 0 if team 2 wins
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Fine-tuning}
+%\begin{itemize}
+%	\item Idea: if we are very confident about a prediction, why not ``all-in''?
+%	\item A tradeoff between a small reward with large probability and a huge penalty with (hopefully) small probability
+%	\item How high is the penalty? For example, we turn a 0.9 prediction into 1
+%		\begin{itemize}
+%			\item If the outcome is 1, the score will improve by $\frac{-\ln(0.9)}{2279} = 4.623\times 10^{-5}$
+%			\item However if the outcome is 0, the penalty will be infinity
+%		\end{itemize}
+%	\item Our adjustments: make all predictions $>0.9$ be 1 and all predictions $<0.1$ be 0
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Results}
+%\begin{itemize}
+%	\item{MOV = Margin of Victory}
+%	\item HCA $=$ Home Court Advantage
+%	\item OAD $=$ Overtime as Draw
+%\end{itemize}
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{ | l | l | l | l |}
+%\hline
+%\textbf{Model} & \textbf{Log loss} & \textbf{Rank} & \textbf{Top} \\ \hline
+%Logistic Regression & 0.588910 & \nth{283} & 47.08\% \\ \hline
+%Na\"{i}ve TrueSkill & 0.527775 & \nth{11} & 1.67\% \\ \hline
+%MOV Unfolding & 0.527510 & \nth{11} & 1.67\% \\ \hline
+%HCA & 0.524036 & \nth{6} & 0.83\%\\ \hline
+%OAD & 0.520875 & \nth{6} & 0.83\% \\ \hline
+%Fine-tuning  & 0.513572 & \nth{5} & 0.67\%\\ \hline
+%%Fine-tuning  & 0.472260 & \nth{1} & 0.00\%\\ \hline
+%\end{tabular}
+%\caption{Final Results}\label{Ta:results}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Conclusion}
+%\begin{itemize}
+%	\item TrueSkill\texttrademark~algorithm can give a reasonable estimate of the ``true skill'' of a player (team) and calculate the wining probability of a future match
+%	\item We selected three more features to give a better prediction
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Questions \& Answers}
+%\begin{center}
+%\huge Any questions?
+%\end{center}
+%\end{frame}
+
+\end{document}
