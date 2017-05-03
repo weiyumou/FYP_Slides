@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  3 MAY 2017 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  3 MAY 2017 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1023,14 +1023,6 @@ Package caption Info: Hyperref support is turned off
 \c@subfigure=\count274
 \c@subtable=\count275
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen288
-\WF@size=\dimen289
-\c@WF@wrappedlines=\count276
-\WF@box=\box72
-\WF@everypar=\toks45
-Package: wrapfig 2003/01/31  v 3.6
-)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/genmisc/nth.sty
 Package: nth 2002/02/27
 )
@@ -1054,32 +1046,32 @@ Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
 emeinfolines.sty
 Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 ))
-\c@defn=\count277
-\c@thrm=\count278
+\c@defn=\count276
+\c@thrm=\count277
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1131,8 +1123,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 34.
+\AtBeginShipoutBox=\box72
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1140,68 +1132,68 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count279
+\c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 34.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 34.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 34.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 34.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 34.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 34.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 34.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 34.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 34.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 34.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 34.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 34.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-4.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-34.
+33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 34.
+ut line 33.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1227,19 +1219,18 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 34.
+LaTeX Info: Redefining \includegraphics on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./main.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 35.
+(Font)              size <5> substituted on input line 34.
 
 <images/logo.png, id=28, 1003.75pt x 359.3425pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 35.
+Package pdftex.def Info: images/logo.png used on input line 34.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [1
 
@@ -1247,23 +1238,23 @@ Package pdftex.def Info: images/logo.png used on input line 35.
 s/logo.png>] (./main.toc)
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 37.
+Package pdftex.def Info: images/logo.png used on input line 36.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 45.
+line 44.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1271,21 +1262,21 @@ thkerncmss.
 )
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 45.
+Package pdftex.def Info: images/logo.png used on input line 44.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [3
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 45.
+Package pdftex.def Info: images/logo.png used on input line 44.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [4
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 55.
+Package pdftex.def Info: images/logo.png used on input line 44.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
 
 [5
@@ -1293,171 +1284,273 @@ Package pdftex.def Info: images/logo.png used on input line 55.
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 55.
+Package pdftex.def Info: images/logo.png used on input line 54.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [6
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 55.
+Package pdftex.def Info: images/logo.png used on input line 54.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [7
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 55.
+Package pdftex.def Info: images/logo.png used on input line 54.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
 
 [8
 
-] <images/low_sample_rate.png, id=263, 290.0436pt x 129.6042pt>
-File: images/low_sample_rate.png Graphic file (type png)
-
-<use images/low_sample_rate.png>
-Package pdftex.def Info: images/low_sample_rate.png used on input line 75.
-(pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
-
-<images/limited_accuracy.png, id=264, 388.45125pt x 200.75pt>
-File: images/limited_accuracy.png Graphic file (type png)
-
-<use images/limited_accuracy.png>
-Package pdftex.def Info: images/limited_accuracy.png used on input line 75.
-(pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
+]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 75.
+Package pdftex.def Info: images/logo.png used on input line 54.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [9
 
- <./images/low_sample_rate.png> <./images/limited_accuracy.png>]
-File: images/low_sample_rate.png Graphic file (type png)
- <use images/low_sample_rate.png>
-Package pdftex.def Info: images/low_sample_rate.png used on input line 75.
-(pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
-File: images/limited_accuracy.png Graphic file (type png)
-
-<use images/limited_accuracy.png>
-Package pdftex.def Info: images/limited_accuracy.png used on input line 75.
-(pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
+]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 75.
+Package pdftex.def Info: images/logo.png used on input line 54.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [10
 
 ]
+<images/low_sample_rate.png, id=315, 290.0436pt x 129.6042pt>
 File: images/low_sample_rate.png Graphic file (type png)
 
 <use images/low_sample_rate.png>
-Package pdftex.def Info: images/low_sample_rate.png used on input line 75.
+Package pdftex.def Info: images/low_sample_rate.png used on input line 74.
 (pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
+
+<images/limited_accuracy.png, id=316, 388.45125pt x 200.75pt>
 File: images/limited_accuracy.png Graphic file (type png)
- <use images/limited_accuracy.png>
-Package pdftex.def Info: images/limited_accuracy.png used on input line 75.
+
+<use images/limited_accuracy.png>
+Package pdftex.def Info: images/limited_accuracy.png used on input line 74.
 (pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
 File: images/logo.png Graphic file (type png)
-
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 75.
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 74.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [11
 
-] (./main.toc)
+ <./images/low_sample_rate.png> <./images/limited_accuracy.png>]
+File: images/low_sample_rate.png Graphic file (type png)
+ <use images/low_sample_rate.png>
+Package pdftex.def Info: images/low_sample_rate.png used on input line 74.
+(pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
+File: images/limited_accuracy.png Graphic file (type png)
+
+<use images/limited_accuracy.png>
+Package pdftex.def Info: images/limited_accuracy.png used on input line 74.
+(pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 77.
+Package pdftex.def Info: images/logo.png used on input line 74.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [12
 
 ]
+File: images/low_sample_rate.png Graphic file (type png)
+
+<use images/low_sample_rate.png>
+Package pdftex.def Info: images/low_sample_rate.png used on input line 74.
+(pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
+File: images/limited_accuracy.png Graphic file (type png)
+ <use images/limited_accuracy.png>
+Package pdftex.def Info: images/limited_accuracy.png used on input line 74.
+(pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 103.
+Package pdftex.def Info: images/logo.png used on input line 74.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [13
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+cmss on input line 118
+File: images/low_sample_rate.png Graphic file (type png)
+ <use images/low_sample_rate.png>
+Package pdftex.def Info: images/low_sample_rate.png used on input line 74.
+(pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
+File: images/limited_accuracy.png Graphic file (type png)
+
+<use images/limited_accuracy.png>
+Package pdftex.def Info: images/limited_accuracy.png used on input line 74.
+(pdftex.def)             Requested size: 136.92018pt x 99.5875pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 74.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [14
+
+] (./main.toc)
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 76.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [15
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 102.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [16
+
+]
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 117
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<images/gps_shift.png, id=400, 433.1382pt x 169.5936pt>
+<images/gps_shift.png, id=479, 433.1382pt x 169.5936pt>
 File: images/gps_shift.png Graphic file (type png)
 
 <use images/gps_shift.png>
-Package pdftex.def Info: images/gps_shift.png used on input line 118.
+Package pdftex.def Info: images/gps_shift.png used on input line 117.
 (pdftex.def)             Requested size: 216.56857pt x 84.79659pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 118.
+Package pdftex.def Info: images/logo.png used on input line 117.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [14
+ [17
 
  <./images/gps_shift.png>]
 File: images/gps_shift.png Graphic file (type png)
 
 <use images/gps_shift.png>
-Package pdftex.def Info: images/gps_shift.png used on input line 118.
+Package pdftex.def Info: images/gps_shift.png used on input line 117.
 (pdftex.def)             Requested size: 216.56857pt x 84.79659pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 118.
+Package pdftex.def Info: images/logo.png used on input line 117.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [15
+ [18
 
 ]
 File: images/gps_shift.png Graphic file (type png)
 
 <use images/gps_shift.png>
-Package pdftex.def Info: images/gps_shift.png used on input line 118.
+Package pdftex.def Info: images/gps_shift.png used on input line 117.
 (pdftex.def)             Requested size: 216.56857pt x 84.79659pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 118.
+Package pdftex.def Info: images/logo.png used on input line 117.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [16
+ [19
 
 ]
-<images/outlier.png, id=484, 421.575pt x 316.18124pt>
+File: images/gps_shift.png Graphic file (type png)
+
+<use images/gps_shift.png>
+Package pdftex.def Info: images/gps_shift.png used on input line 117.
+(pdftex.def)             Requested size: 216.56857pt x 84.79659pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 117.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [20
+
+]
+<images/outlier.png, id=590, 421.575pt x 316.18124pt>
 File: images/outlier.png Graphic file (type png)
  <use images/outlier.png>
-Package pdftex.def Info: images/outlier.png used on input line 129.
+Package pdftex.def Info: images/outlier.png used on input line 128.
 (pdftex.def)             Requested size: 244.51366pt x 183.38524pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 129.
+Package pdftex.def Info: images/logo.png used on input line 128.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [17
+ [21
 
  <./images/outlier.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 145.
+Package pdftex.def Info: images/logo.png used on input line 144.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [18
+ [22
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 145.
+Package pdftex.def Info: images/logo.png used on input line 144.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [19
+ [23
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 155.
+Package pdftex.def Info: images/logo.png used on input line 165.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-Package atenddvi Info: Last page = 20.
 
-[20
+[24
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [25
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [26
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [27
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [28
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+
+[29
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [30
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [31
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 165.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+Package atenddvi Info: Last page = 32.
+ [32
 
 ]
 \tf@nav=\write6
@@ -1469,11 +1562,11 @@ Package atenddvi Info: Last page = 20.
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 293.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 303.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 788B9223792B024DFA3393E8BB3F5C02;104.
 
@@ -1481,13 +1574,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 26074 strings out of 493014
- 505619 string characters out of 6133351
- 551563 words of memory out of 5000000
- 29078 multiletter control sequences out of 15000+600000
+ 26042 strings out of 493014
+ 505097 string characters out of 6133351
+ 550337 words of memory out of 5000000
+ 29026 multiletter control sequences out of 15000+600000
  12356 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,64p,10410b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1503,10 +1596,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (20 pages, 722366 bytes).
+Output written on main.pdf (32 pages, 751554 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 584 compressed objects within 6 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 967 PDF objects out of 1000 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 71 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

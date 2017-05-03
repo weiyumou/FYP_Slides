@@ -4,7 +4,6 @@
 \usepackage{textcomp}
 \usepackage{animate}
 \usepackage{subcaption}
-\usepackage{wrapfig}
 \usepackage[super]{nth}
 
 \usetheme{Madrid}
@@ -38,35 +37,35 @@
 \begin{frame}
 \frametitle{Introduction: Problem}
 \begin{itemize}
-	\item <1-> A \textbf{dynamic road network} $G=(V,E)$ with a time-dependent weight function $w : E,t \rightarrow \mathbb{R}$
-	\item <2-> A \textbf{query} $Q(u,v,t)$ that asks for a shortest path from $u$ to $v$ departing at time moment $t$
+	\item <2-> A \textbf{dynamic road network} $G=(V,E)$ with a time-dependent weight function $w : E,t \rightarrow \mathbb{R}$
+	\item <3-> A \textbf{query} $Q(u,v,t)$ that asks for a shortest path from $u$ to $v$ departing at time moment $t$
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Introduction: General Approach}
 \begin{itemize}
-	\item <1-> Traditional \textbf{Bellman-Ford or Dijkstra's algorithm}	do not work with dynamic edge weights (``the curse of traditionality'')
-	\item <2-> The new \textbf{machine learning-based approach} draws on collective wisdom of thousands of taxi drivers
-	\item <3-> \textbf{Unsupervised learning} is employed to figure out the time-dependent edge costs
-	\item <4-> A modified Dijkstra's algorithm calculates a shortest path on the fly
+	\item <2-> Traditional \textbf{Bellman-Ford or Dijkstra's algorithm}	do not work with dynamic edge weights (``the curse of traditionality'')
+	\item <3-> The new \textbf{machine learning-based approach} draws on collective wisdom of thousands of taxi drivers
+	\item <4-> \textbf{Unsupervised learning} is employed to figure out the time-dependent edge costs
+	\item <5-> A modified Dijkstra's algorithm calculates a shortest path on the fly
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Introduction: Challenges}
 \begin{itemize}
-	\item <1-> Arbitrary $u$ and $v$
-	\item <2-> Sparse sample points
-	\item <3-> Limited GPS accuracy
+	\item <2-> Arbitrary $u$ and $v$
+	\item <3-> Sparse sample points
+	\item <4-> Limited GPS accuracy
 \end{itemize}
 
 \begin{figure}
 \centering
-\visible<2->{
+\visible<3->{
 \includegraphics[width=0.4\textwidth, height = 3.5cm]{low_sample_rate}
 }
-\visible<3->{
+\visible<4->{
     \includegraphics[width=0.4\textwidth, height = 3.5cm]{limited_accuracy}
      \caption{Examples of challenges} 
 }
@@ -104,11 +103,11 @@ OCCUPIED & Hired (1) or not (0) \\ \hline
 \begin{frame}
 \frametitle{Preliminary Processing: Reverse Geocoding}
 \begin{itemize}
-	\item <1-> GPS coordinate translation: 1.34\textdegree N, 103.68\textdegree E~\textrightarrow~SCSE, NTU
-	\item <2-> China GPS shift problem: WGS84 v.s. BD09
-	\item <3-> Solution: WGS84~$\xrightarrow{Baidu\ API}$~BD09~$\xrightarrow{Baidu\ API}$~Street
+	\item <2-> GPS coordinate translation: 1.34\textdegree N, 103.68\textdegree E~\textrightarrow~SCSE, NTU
+	\item <3-> China GPS shift problem: WGS84 v.s. BD09
+	\item <4-> Solution: WGS84~$\xrightarrow{Baidu\ API}$~BD09~$\xrightarrow{Baidu\ API}$~Street
 \end{itemize}
-\visible<2->{
+\visible<3->{
 \begin{figure}[h!]
 \includegraphics[scale=0.5]{gps_shift}
 \centering
@@ -145,12 +144,23 @@ Outlier Detection = Outlier Identification + Outlier Removal
 
 \begin{frame}
 \frametitle{Preliminary Processing: Outlier Detection}
-Outlier Identification: Clustering
+\textbf{Outlier Identification}: Clustering
 \begin{itemize}
-	\item Sample point concentration \textrightarrow~cluster concentration
-	\item Top $k\%$ ($k = 50\%$) largest clusters as groups of correct sample points
-	\item 10 \texttimes~10 self-organising feature maps implementation
+	\item <2-> Sample point concentration \textrightarrow~cluster concentration
+	\item <3-> Top $k\%$ ($k = 50$) largest clusters as groups of correct sample points
+	\item <4-> 10 \texttimes~10 self-organising feature maps implementation
 \end{itemize}
+
+\visible <5->{
+\textbf{Outlier Removal}: Distance Threshold $d_{max}$
+}
+\begin{itemize}
+	\item <6-> Assign sample points to legal centroids no farther than $d_{max}$
+	\item <7-> Remove all ``orphan'' sample points
+	\item <8-> Use real physical distance on the Earth
+	\item <9-> Set $d_{max}$ = 30m or 50m
+\end{itemize}
+
 \end{frame}
 %
 %\begin{frame}
