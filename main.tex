@@ -4,10 +4,15 @@
 \usepackage{textcomp}
 \usepackage{animate}
 \usepackage{subcaption}
+\usepackage{wrapfig}
 \usepackage[super]{nth}
 
 \usetheme{Madrid}
 \setbeamertemplate{caption}[numbered]
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{thrm}{Theorem}
 
 \AtBeginSection[]
 {
@@ -23,7 +28,7 @@
 {Wei Yumou}
 \institute[]{School of Computer Science and Engineering \\ Nanyang Technological University}
 \date[\today]{}
-\logo{\includegraphics[height=1.5cm]{logo}}
+\logo{\includegraphics[height=1cm]{logo}}
 
 \begin{document}
 \frame{\titlepage}
@@ -55,81 +60,98 @@
 	\item <2-> Sparse sample points
 	\item <3-> Limited GPS accuracy
 \end{itemize}
+
+\begin{figure}
+\centering
+\visible<2->{
+\includegraphics[width=0.4\textwidth, height = 3.5cm]{low_sample_rate}
+}
+\visible<3->{
+    \includegraphics[width=0.4\textwidth, height = 3.5cm]{limited_accuracy}
+     \caption{Examples of challenges} 
+}
+\end{figure}
 \end{frame}
 
 \section{Preliminary Processing}
 \begin{frame}
-\frametitle{Introduction2}
-%\begin{figure}[h!]
-%\includegraphics[scale=0.44]{rounds}
-%\centering
-%\caption{NCAA Basketball Tournament Schedule}\label{Fig:tour_schedule}
-%\end{figure}
+\frametitle{Preliminary Processing: Data Description}
+
+\begin{itemize}
+	\item Is collected from Computational Sensing Lab at Tsinghua University
+	\item Contains 83 million GPS records from 8,602 taxis in Beijing during May of 2009
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\resizebox*{0.5\textwidth}{!}{
+\begin{tabular}{ | l | l | l | }
+\hline
+\textbf{Field} & \textbf{Explanation} \\ \hline
+CUID & ID for each taxi \\ \hline
+UNIX\_EPOCH & Unix timestamp \\ \hline
+GPS\_LONG & Longitude in WGS-84\\ \hline
+GPS\_LAT & Latitude in WGS-84 \\ \hline
+HEAD & Heading direction \\ \hline
+SPEED & Instantaneous speed (m/s)\\ \hline
+OCCUPIED & Hired (1) or not (0) \\ \hline
+\end{tabular}
+}
+\caption{A summary of the seven original fields}\label{Ta:orig_field}
+\end{table}
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Data Set}
-%\begin{table}[h!]
-%\centering
-%\resizebox{\columnwidth}{!}{
-%\begin{tabular}{ | l | l | l | }
-%\hline
-%\textbf{Field} & \textbf{Description} & \textbf{Example} \\ \hline
-%Season & The year of the final tournament & 2014 \\ \hline
-%Daynum & The day the game was played on & 20 \\ \hline
-%Wteam & Id number of the winning team & 1260\\ \hline
-%Wscore & No. of points scored by the winning team & 77\\ \hline
-%Lteam & Id number of the losing  team & 1288\\ \hline
-%Lscore & No. of points scored by the losing team & 71\\ \hline
-%Wloc & Location of the winning team: H (home), A (visiting), N (neutral) & H\\ \hline
-%Numot & No. of overtime periods in the game & 0\\ \hline
-%\end{tabular}}
-%\caption{RegularSeasonCompactResults.csv}\label{Ta:regular_res}
-%\end{table}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Data Set}
-%\begin{table}[h!]
-%\centering
-%\resizebox{\columnwidth}{!}{
-%\begin{tabular}{ | l | l | l | }
-%\hline
-%\textbf{Field} & \textbf{Description} & \textbf{Example} \\ \hline
-%Id & season\_team1id\_team2id & 2013\_1104\_1129 \\ \hline
-%Pred & The predicted probability that the first team will win & 0.5 \\ \hline
-%\end{tabular}}
-%\caption{SampleSubmission.csv}\label{Ta:sample_sub}
-%\end{table}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Approach}
-%\begin{itemize}
-%	\item Quantify the skill level of all teams
-%	\item Measure the difference between the skills of each team
-%	\item Predict outcomes of matches between teams
-%	\item Logistic regression (TensorFlow)
-%	\item TrueSkill\texttrademark
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Logistic Regression}
-%\begin{itemize}
-%\item Extract seeds for all teams
-%	\begin{itemize} \item Seed 1 $>$ Seed 15 \end{itemize}
-%\item Match seeds to teams
-%\item Get difference between the seeds
-%	\begin{itemize} \item Team 2 $-$ Team 1 \end{itemize}
-%\item Train model with seed difference and winning team
-%\item $y = wx + b$
-%	\begin{itemize} \item $w$: 0.150500
-%				\item $b$: 0.039660 \end{itemize}
-%\item Sigmoid activation function
-%\item Result of 0.588910
-%\end{itemize}
-%\end{frame}
+\begin{frame}
+\frametitle{Preliminary Processing: Reverse Geocoding}
+\begin{itemize}
+	\item <1-> GPS coordinate translation: 1.34\textdegree N, 103.68\textdegree E~\textrightarrow~SCSE, NTU
+	\item <2-> China GPS shift problem: WGS84 v.s. BD09
+	\item <3-> Solution: WGS84~$\xrightarrow{Baidu\ API}$~BD09~$\xrightarrow{Baidu\ API}$~Street
+\end{itemize}
+\visible<2->{
+\begin{figure}[h!]
+\includegraphics[scale=0.5]{gps_shift}
+\centering
+\caption{An example of China GPS shift problem}\label{Fig:gps_shift}
+\end{figure}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Preliminary Processing: Outlier Detection}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.58]{outlier}
+\centering
+\caption{An example of outliers}\label{Fig:outlier}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Preliminary Processing: Outlier Detection}
+
+\begin{thrm}[\emph{Majority Clustering Theorem}]\label{Theorem: majority_clustering}
+If a \textbf{reasonable reverse geocoder} is used to reverse-geocode a set of GPS data points which are mapped to a particular street \emph{in reality}, then, when plotted on a 2-D plane, majority (more than 50\%) of the points must be clustered together to form a rough shape that is similar to the shape of the street that they are supposed to be mapped to. 
+\end{thrm}
+
+\visible <2->{
+Two-step procedure:
+
+Outlier Detection = Outlier Identification + Outlier Removal
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Preliminary Processing: Outlier Detection}
+Outlier Identification: Clustering
+\begin{itemize}
+	\item Sample point concentration \textrightarrow~cluster concentration
+	\item Top $k\%$ ($k = 50\%$) largest clusters as groups of correct sample points
+	\item 10 \texttimes~10 self-organising feature maps implementation
+\end{itemize}
+\end{frame}
 %
 %\begin{frame}
 %\frametitle{Logistic Regression}
