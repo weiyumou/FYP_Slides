@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  3 MAY 2017 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  4 MAY 2017 13:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1227,7 +1227,7 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 34.
 
-<images/logo.png, id=28, 1003.75pt x 359.3425pt>
+<images/logo.png, id=32, 1003.75pt x 359.3425pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 34.
@@ -1318,14 +1318,14 @@ Package pdftex.def Info: images/logo.png used on input line 54.
  [10
 
 ]
-<images/low_sample_rate.png, id=315, 290.0436pt x 129.6042pt>
+<images/low_sample_rate.png, id=321, 290.0436pt x 129.6042pt>
 File: images/low_sample_rate.png Graphic file (type png)
 
 <use images/low_sample_rate.png>
 Package pdftex.def Info: images/low_sample_rate.png used on input line 74.
 (pdftex.def)             Requested size: 136.91797pt x 99.58589pt.
 
-<images/limited_accuracy.png, id=316, 388.45125pt x 200.75pt>
+<images/limited_accuracy.png, id=322, 388.45125pt x 200.75pt>
 File: images/limited_accuracy.png Graphic file (type png)
 
 <use images/limited_accuracy.png>
@@ -1408,7 +1408,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmss on input line 117
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<images/gps_shift.png, id=479, 433.1382pt x 169.5936pt>
+<images/gps_shift.png, id=487, 433.1382pt x 169.5936pt>
 File: images/gps_shift.png Graphic file (type png)
 
 <use images/gps_shift.png>
@@ -1457,7 +1457,7 @@ Package pdftex.def Info: images/logo.png used on input line 117.
  [20
 
 ]
-<images/outlier.png, id=590, 421.575pt x 316.18124pt>
+<images/outlier.png, id=598, 421.575pt x 316.18124pt>
 File: images/outlier.png Graphic file (type png)
  <use images/outlier.png>
 Package pdftex.def Info: images/outlier.png used on input line 128.
@@ -1552,7 +1552,7 @@ Package pdftex.def Info: images/logo.png used on input line 165.
  [32
 
 ]
-<images/sofm_weights.png, id=914, 421.575pt x 316.18124pt>
+<images/sofm_weights.png, id=922, 421.575pt x 316.18124pt>
 File: images/sofm_weights.png Graphic file (type png)
 
 <use images/sofm_weights.png>
@@ -1564,7 +1564,7 @@ Package pdftex.def Info: images/logo.png used on input line 175.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [33
 
- <./images/sofm_weights.png (PNG copy)>] <images/bjtaxigps_30m.png, id=941, 421
+ <./images/sofm_weights.png (PNG copy)>] <images/bjtaxigps_30m.png, id=949, 421
 .575pt x 316.18124pt>
 File: images/bjtaxigps_30m.png Graphic file (type png)
 
@@ -1572,7 +1572,7 @@ File: images/bjtaxigps_30m.png Graphic file (type png)
 Package pdftex.def Info: images/bjtaxigps_30m.png used on input line 185.
 (pdftex.def)             Requested size: 171.14764pt x 128.36147pt.
 
-<images/bjtaxigps_50m.png, id=942, 421.575pt x 316.18124pt>
+<images/bjtaxigps_50m.png, id=950, 421.575pt x 316.18124pt>
 File: images/bjtaxigps_50m.png Graphic file (type png)
 
 <use images/bjtaxigps_50m.png>
@@ -1582,11 +1582,85 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 185.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-Package atenddvi Info: Last page = 34.
  [34
 
  <./images/bjtaxigps_30m.png (PNG copy)> <./images/bjtaxigps_50m.png (PNG copy)
->]
+>] (./main.toc)
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 187.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [35
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [36
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+
+[37
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [38
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [39
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [40
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 212.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [41
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 236.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+
+[42
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 260.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [43
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 270.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+Package atenddvi Info: Last page = 44.
+ [44
+
+]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1596,25 +1670,25 @@ Package atenddvi Info: Last page = 34.
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 306.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 338.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 788B9223792B024DFA3393E8BB3F5C02;104.
+(rerunfilecheck)             Checksum: 9F1452C0A68595F52B51913A1342C622;153.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 338.
  ) 
 Here is how much of TeX's memory you used:
- 26069 strings out of 493014
- 505628 string characters out of 6133351
- 550473 words of memory out of 5000000
- 29044 multiletter control sequences out of 15000+600000
+ 26112 strings out of 493014
+ 506064 string characters out of 6133351
+ 560628 words of memory out of 5000000
+ 29061 multiletter control sequences out of 15000+600000
  12356 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,64p,10410b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1630,10 +1704,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (34 pages, 836756 bytes).
+Output written on main.pdf (44 pages, 865900 bytes).
 PDF statistics:
- 1027 PDF objects out of 1200 (max. 8388607)
- 944 compressed objects within 10 object streams
- 77 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1310 PDF objects out of 1440 (max. 8388607)
+ 1214 compressed objects within 13 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

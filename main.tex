@@ -182,59 +182,91 @@ Outlier Detection = Outlier Identification + Outlier Removal
 \caption{A plot of sample points after outlier removal}\label{Fig:after_removal}
 \end{figure}
 \end{frame}
-%
-%\begin{frame}
-%\frametitle{TrueSkill\texttrademark: Introduction}
-%\begin{itemize}
-%	\item A player-rating system developed by Microsoft Research to rank players on Xbox LIVE for matchmaking. 
-%	\item A form of Bayesian Inference
-%	\item Key idea to model each player's ``true skill'' as a Gaussian distribution $N\sim(s_{i} | \mu_{i}, \sigma_{i}^{2})$ (prior)
-%	\item The outcome denoted as $r$ (evidence) $\rightarrow P(r | s_{i})$ (likelihood)
-%\end{itemize}
-%\begin{equation}
-%P(s_{i} | r) = \frac{P(r | s_{i})P(s_{i})}{P(r)}
-%\end{equation}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{TrueSkill\texttrademark: How It Works}
-%\begin{itemize}
-%	\item Start with $N_{1}\sim(\mu_{1} = 25, \sigma_{1} = \frac{25}{3})$ and $N_{2}\sim(\mu_{2} = 25, \sigma_{2} = \frac{25}{3})$
-%	\item As the tournament goes, TrueSkill\texttrademark~updates each player's skill based on match outcomes ($Y = 1$ when Player 1 win)
-%	\item The wining probability of \textbf{an upcoming match} can be calculated based on each player's true skill distribution
-%\begin{equation}
-%P(Y = 1) = \Phi(\frac{\mu_{1} - \mu_{2}}{\sqrt{2\beta^{2} + \sigma_{1}^{2} + \sigma_{2}^{2}}})
-%\end{equation}
-%where $\Phi$ is the standard Gaussian CDF and $\beta$ represents performance variations around skill (default value $\sigma/2$)
-%\end{itemize}
-%\end{frame}
-%
-%%\begin{frame}
-%%\frametitle{TrueSkill\texttrademark: Demo}
-%%\animategraphics[loop,controls,width=0.7\linewidth]{2}{images/trueskill_demo/}{0}{36}
-%%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Models}
-%\begin{itemize}
-%	\item{MOV = Margin of Victory}
-%	\item{HCA = Home Court Advantage}
-%	\item{OAD = Overtime as Draw}
-%\end{itemize}
-%\begin{table}[h!]
-%\centering
-%\resizebox{\columnwidth}{!}{
-%\begin{tabular}{ | l | l | l |}
-%\hline
-%\textbf{Model} & \textbf{Description} & \textbf{Parameters} \\ \hline
-%Na\"{i}ve TrueSkill & Bare TrueSkill\texttrademark & $\mu = 25, \sigma = 25/3$ \\ \hline
-%MOV Unfolding & If MOV $>m$, recursively treat it as multiple victories & $m$ = 11\\ \hline
-%HCA & Deduct $h$ scores if victory at home court & $h$ = 1.5 \\ \hline
-%OAD & Treat overtime as having equal scores & -\\ \hline
-%\end{tabular}}
-%\caption{Models}\label{Ta:model}
-%\end{table}
-%\end{frame}
+
+\section{Landmark Graph}
+
+\begin{frame}
+\frametitle{Landmark Graph: Basic Ideas}
+
+\begin{defn}[\emph{Landmark}]\label{Def:ldmk}
+A landmark is a road segment that is frequently traversed by taxi drivers according to the taxi GPS trajectory database. 
+\end{defn}
+\visible<2->{
+Rationale
+}
+\begin{itemize}
+	\item <2-> Sample points too sparse to model every street accurately
+	\item <3-> Landmarks resemble common human thinking
+\end{itemize}
+
+\visible<4->{
+Step to build landmark graph
+}
+\begin{itemize}
+	\item <4-> Separate sample points into \textbf{trip}s
+	\item <5-> Count occurrences of each street
+	\item <6-> Find connections between two landmarks
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Landmark Graph: Trip Identification}
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{ | l | l | l | l | l | l | l | l | l | l | l | l | l | }
+\hline
+\textbf{CUID} & \textbf{UTC} & \textbf{GPS\_LONG} & \textbf{GPS\_LAT} & \textbf{OCCUPIED} & \textbf{TRIP\_ID} \\\hline
+1	&	1/5/2009 0:02:00	&	116.39616	&	39.81294	&	0	&	4552265\\ \hline
+1	&	1/5/2009 0:04:00	&	116.39575	&	39.82296	&	0	&	4552265\\ \hline
+1	&	1/5/2009 0:07:00	&	116.39567	&	39.82774	&	0	&	4552265\\ \hline
+1	&	1/5/2009 17:08:00	&	116.30142	&	39.98105	&	1	&	1\\ \hline
+1	&	1/5/2009 17:10:00	&	116.29514	&	39.98419	&	1	&	1\\ \hline
+1	&	1/5/2009 17:11:00	&	116.28959	&	39.98289	&	1	&	1\\ \hline
+1	&	1/5/2009 17:12:00	&	116.28087	&	39.97552	&	1	&	1\\ \hline
+1	&	1/5/2009 17:16:00	&	116.26813	&	39.93537	&	1	&	1\\ \hline
+1	&	1/5/2009 18:11:00	&	116.36537	&	39.95019	&	0	&	4552271\\ \hline
+1	&	1/5/2009 18:12:00	&	116.36546	&	39.94886	&	0	&	4552271\\ \hline
+1	&	1/5/2009 18:13:00	&	116.35927	&	39.94528	&	0	&	4552271\\ \hline
+\end{tabular}}
+\caption{An example of trip identification}\label{Ta:trip_identification}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Landmark Graph: Frequency Counting}
+\begin{table}[h!]
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{ | l | l | l | l | l | l | l | l | l | l | l | l | l | }
+\hline
+\textbf{CUID} & \textbf{UTC} & \textbf{GPS\_LONG} & \textbf{GPS\_LAT} & \textbf{Street} & \textbf{TRIP\_ID} \\\hline
+1	&	1/5/2009 0:02:00	&	116.39616	&	39.81294	&	A	&	4552265\\ \hline
+1	&	1/5/2009 0:04:00	&	116.39575	&	39.82296	&	A	&	4552265\\ \hline
+1	&	1/5/2009 0:07:00	&	116.39567	&	39.82774	&	B	&	4552265\\ \hline
+1	&	1/5/2009 17:08:00	&	116.30142	&	39.98105	&	C	&	1\\ \hline
+1	&	1/5/2009 17:10:00	&	116.29514	&	39.98419	&	C	&	1\\ \hline
+1	&	1/5/2009 17:11:00	&	116.28959	&	39.98289	&	C	&	1\\ \hline
+1	&	1/5/2009 17:12:00	&	116.28087	&	39.97552	&	A	&	1\\ \hline
+1	&	1/5/2009 17:16:00	&	116.26813	&	39.93537	&	A	&	1\\ \hline
+1	&	1/5/2009 18:11:00	&	116.36537	&	39.95019	&	B	&	4552271\\ \hline
+1	&	1/5/2009 18:12:00	&	116.36546	&	39.94886	&	C	&	4552271\\ \hline
+1	&	1/5/2009 18:13:00	&	116.35927	&	39.94528	&	C	&	4552271\\ \hline
+\end{tabular}}
+\caption{An illustration of frequency counting}\label{Ta:frequency_count}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Landmark Graph: Construction}
+For each trip
+\begin{itemize}
+	\item Select a landmark $j$
+	\item Record intermediate streets while searching for the next landmark $k$
+	\item Repeat the process starting from $k$ until all streets are examined
+\end{itemize}
+\end{frame}
 %
 %\begin{frame}
 %\frametitle{Evaluation: Log loss}
