@@ -311,6 +311,75 @@ Possible Explanations
 \end{figure}
 \end{frame}
 
+\begin{frame}
+\frametitle{Travel Time Estimation: Distribution Fit}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.4]{clus_histo}
+\includegraphics[scale = 0.4]{weibull_fit}
+\caption{An illustration of fitting distribution} 
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Implementation}
+\begin{defn}[\emph{Optimism Index}]\label{Def:opti_index}
+An optimism index indicates how optimistic a driver feels about his or her driving skills. A driver with an optimism index of $p\%$ usually drives faster than $(1 - p)\%$ drivers under similar road conditions.
+\end{defn}
+\begin{itemize}
+	\item <1-> Calculate and store $\alpha$ and $\beta$ for each 30-minute window
+	\item <2-> Use optimism index $p$ to find out travel time
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Evaluation}
+\begin{itemize}
+	\item <2-> Select the most significant 150 edges (pairs of landmarks)
+	\item <3-> Sample 20\% of trips passing through each pair randomly
+	\item <4-> Calculate travel time of each trip with optimism index $p = 0.5$
+	\item <5-> Use Baidu Maps' API to give real-time estimates
+	\item <6-> Compare Baidu's estimates with the \textbf{median} travel time 
+\end{itemize}
+\visible <7->{
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ | c | c | c | c |}
+\hline
+\textbf{Landmark Graph} & \textbf{RMSE} & \textbf{Mean Error Ratio} & \textbf{Mean No. of Samples Per Edge} \\ \hline
+wrkd\_ldmkgraph\_50m & 78.84 & -0.009 & 1824.60 \\ \hline
+wrkd\_ldmkgraph\_30m & 87.96 & -0.065 & 1507.56 \\ \hline
+holi\_ldmkgraph\_50m & 87.39 & -0.16 & 832.96 \\ \hline
+holi\_ldmkgraph\_30m & 76.41 & -0.14 & 681.89 \\ \hline
+\end{tabular}}
+\caption{A summary of evaluation results}\label{Ta:eval_res}
+\end{table}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Evaluation}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.4]{wrkd_50m_reg}
+\includegraphics[scale = 0.4]{wrkd_30m_reg}
+\caption{A plot of linear regression for weekday landmark graph}
+\label{Fig:wrkd_reg}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Evaluation}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.4]{holi_50m_reg}
+\includegraphics[scale = 0.4]{holi_30m_reg}
+\caption{A plot of linear regression for weekend landmark graph}
+\label{Fig:holi_reg}
+\end{figure}
+\end{frame}
 %
 %\begin{frame}
 %\frametitle{Conclusion}

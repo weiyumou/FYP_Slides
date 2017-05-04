@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  4 MAY 2017 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  4 MAY 2017 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1732,14 +1732,14 @@ Package pdftex.def Info: images/logo.png used on input line 303.
  [53
 
 ]
-<images/trvltime_clus.png, id=1497, 421.575pt x 316.5426pt>
+<images/trvltime_clus.png, id=1498, 421.575pt x 316.5426pt>
 File: images/trvltime_clus.png Graphic file (type png)
 
 <use images/trvltime_clus.png>
 Package pdftex.def Info: images/trvltime_clus.png used on input line 313.
 (pdftex.def)             Requested size: 168.627pt x 126.61479pt.
 
-<images/trvltime_neurons.png, id=1498, 421.575pt x 316.5426pt>
+<images/trvltime_neurons.png, id=1499, 421.575pt x 316.5426pt>
 File: images/trvltime_neurons.png Graphic file (type png)
 
 <use images/trvltime_neurons.png>
@@ -1749,10 +1749,138 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 313.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-Package atenddvi Info: Last page = 54.
  [54
 
  <./images/trvltime_clus.png> <./images/trvltime_neurons.png>]
+<images/clus_histo.png, id=1528, 421.575pt x 316.18124pt>
+File: images/clus_histo.png Graphic file (type png)
+
+<use images/clus_histo.png>
+Package pdftex.def Info: images/clus_histo.png used on input line 323.
+(pdftex.def)             Requested size: 168.627pt x 126.47025pt.
+
+<images/weibull_fit.png, id=1529, 421.575pt x 316.18124pt>
+File: images/weibull_fit.png Graphic file (type png)
+
+<use images/weibull_fit.png>
+Package pdftex.def Info: images/weibull_fit.png used on input line 323.
+(pdftex.def)             Requested size: 168.627pt x 126.47025pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 323.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [55
+
+ <./images/clus_histo.png (PNG copy)> <./images/weibull_fit.png (PNG copy)>]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 334.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+
+[56
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 334.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [57
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [58
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [59
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [60
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+
+[61
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [62
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [63
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 360.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [64
+
+]
+<images/wrkd_50m_reg.png, id=1796, 376.40625pt x 376.40625pt>
+File: images/wrkd_50m_reg.png Graphic file (type png)
+
+<use images/wrkd_50m_reg.png>
+Package pdftex.def Info: images/wrkd_50m_reg.png used on input line 371.
+(pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
+
+<images/wrkd_30m_reg.png, id=1797, 376.40625pt x 376.40625pt>
+File: images/wrkd_30m_reg.png Graphic file (type png)
+
+<use images/wrkd_30m_reg.png>
+Package pdftex.def Info: images/wrkd_30m_reg.png used on input line 371.
+(pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 371.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+Package atenddvi Info: Last page = 65.
+ [65
+
+ <./images/wrkd_50m_reg.png (PNG copy)> <./images/wrkd_30m_reg.png (PNG copy)>]
+
+<images/holi_50m_reg.png, id=1824, 376.40625pt x 376.40625pt>
+File: images/holi_50m_reg.png Graphic file (type png)
+
+<use images/holi_50m_reg.png>
+Package pdftex.def Info: images/holi_50m_reg.png used on input line 383.
+(pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
+
+<images/holi_30m_reg.png, id=1825, 376.40625pt x 376.40625pt>
+File: images/holi_30m_reg.png Graphic file (type png)
+
+<use images/holi_30m_reg.png>
+Package pdftex.def Info: images/holi_30m_reg.png used on input line 383.
+(pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 383.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [66
+
+ <./images/holi_50m_reg.png (PNG copy)> <./images/holi_30m_reg.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1762,11 +1890,20 @@ Package atenddvi Info: Last page = 54.
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 331.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 400.
+ (./main.aux
+
+Package atenddvi Warning: Rerun LaTeX, last page has changed.
+
+
+Package animate Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(animate)                @ Rerun to get internal references right! @
+(animate)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B73034BACF99C4B7CCFA2BA04DC6627E;210.
 
@@ -1774,13 +1911,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 26166 strings out of 493014
- 506868 string characters out of 6133351
- 560687 words of memory out of 5000000
- 29088 multiletter control sequences out of 15000+600000
+ 26236 strings out of 493014
+ 508013 string characters out of 6133351
+ 560863 words of memory out of 5000000
+ 29124 multiletter control sequences out of 15000+600000
  12356 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,64p,10410b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1796,10 +1936,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (54 pages, 1105827 bytes).
+Output written on main.pdf (66 pages, 1246068 bytes).
 PDF statistics:
- 1595 PDF objects out of 1728 (max. 8388607)
- 1482 compressed objects within 15 object streams
- 123 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1928 PDF objects out of 2073 (max. 8388607)
+ 1794 compressed objects within 18 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
