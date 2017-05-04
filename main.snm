@@ -1,14 +1,16 @@
-\beamer@slide {Ta:orig_field}{16}
-\beamer@slide {Fig:gps_shift}{17}
-\beamer@slide {Fig:outlier}{21}
-\beamer@slide {Theorem: majority_clustering}{22}
-\beamer@slide {Fig:sofm_weights}{33}
-\beamer@slide {Fig:after_removal}{34}
-\beamer@slide {Def:ldmk}{36}
-\beamer@slide {Ta:trip_identification}{42}
-\beamer@slide {Ta:frequency_count}{43}
-\beamer@slide {Fig:wrkd_50m_trvltime}{50}
-\beamer@slide {Def:opti_index}{56}
-\beamer@slide {Ta:eval_res}{58}
-\beamer@slide {Fig:wrkd_reg}{65}
-\beamer@slide {Fig:holi_reg}{66}
+\beamer@slide {Ta:orig_field}{17}
+\beamer@slide {Fig:gps_shift}{18}
+\beamer@slide {Fig:outlier}{22}
+\beamer@slide {Theorem: majority_clustering}{23}
+\beamer@slide {Fig:sofm_weights}{34}
+\beamer@slide {Fig:after_removal}{35}
+\beamer@slide {Def:ldmk}{37}
+\beamer@slide {Ta:trip_identification}{43}
+\beamer@slide {Ta:frequency_count}{44}
+\beamer@slide {Fig:wrkd_50m_trvltime}{51}
+\beamer@slide {Def:opti_index}{57}
+\beamer@slide {Ta:eval_res}{59}
+\beamer@slide {Fig:wrkd_reg}{66}
+\beamer@slide {Fig:holi_reg}{67}
+\beamer@slide {Def:fifo_graph}{69}
+\beamer@slide {Fig:dynamic_update}{72}

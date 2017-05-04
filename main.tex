@@ -32,6 +32,11 @@
 \begin{document}
 \frame{\titlepage}
 
+\begin{frame}
+\frametitle{Agenda}
+\tableofcontents[]
+\end{frame}
+
 \section{Introduction}
 
 \begin{frame}
@@ -380,20 +385,52 @@ holi\_ldmkgraph\_30m & 76.41 & -0.14 & 681.89 \\ \hline
 \label{Fig:holi_reg}
 \end{figure}
 \end{frame}
-%
-%\begin{frame}
-%\frametitle{Conclusion}
-%\begin{itemize}
-%	\item TrueSkill\texttrademark~algorithm can give a reasonable estimate of the ``true skill'' of a player (team) and calculate the wining probability of a future match
-%	\item We selected three more features to give a better prediction
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Questions \& Answers}
-%\begin{center}
-%\huge Any questions?
-%\end{center}
-%\end{frame}
+
+\section{Shortest Path Calculation}
+\begin{frame}
+\frametitle{Shortest Path Calculation: Basic Ideas}
+\begin{defn}[\emph{FIFO Graph}]\label{Def:fifo_graph}
+A time-dependent graph $G=(V,E)$ with a dynamic weight function $w : E,t \rightarrow \mathbb{R}$ is a FIFO graph iff for every edge $(u, v) \in E$
+\begin{equation}
+\forall \Delta t \geq 0, \quad w(u, v, t_{0}) \leq \Delta t + w(u, v, t_{0} + \Delta t)
+\end{equation}
+\end{defn}
+
+\begin{itemize}
+	\item <2-> Consider a landmark graph as a FIFO graph (usually true)
+	\item <3-> Modify Dijkstra's algorithm to calculate edge costs in an online fashion
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Shortest Path Calculation: Modified Dijkstra's Algorithm}
+\begin{figure}[h!]
+\includegraphics[scale=1]{shortest_path_demo}
+\centering
+\caption{An example of modified Dijkstra's algorithm}\label{Fig:dynamic_update}
+\end{figure}
+
+\end{frame}
+
+\section{Conclusion and Q\&A}
+\begin{frame}
+\frametitle{Conclusion and Q\&A: Conclusion}
+\begin{itemize}
+	\item <1-> Framed the time-dependent shortest path problem
+	\item <2-> Identified challenges in solving the problem
+	\item <3-> Proposed an innovative outlier detection approach
+	\item <4-> Introduced algorithms for building landmark graphs
+	\item <5-> Described procedures for estimating travel time
+	\item <6-> Illustrated the modified Dijkstra's algorithm
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion and Q\&A: Questions \& Answers}
+\begin{center}
+\huge Any questions?
+\end{center}
+\end{frame}
 
 \end{document}
