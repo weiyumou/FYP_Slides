@@ -267,57 +267,50 @@ For each trip
 	\item Repeat the process starting from $k$ until all streets are examined
 \end{itemize}
 \end{frame}
-%
-%\begin{frame}
-%\frametitle{Evaluation: Log loss}
-%\begin{equation}
-%LogLoss = -\frac{1}{n}\sum_{i=1}^{n}[y_{i}\ln(\hat{y_{i}}) + (1 - y_{i})\ln(1 - \hat{y_{i}})]
-%\end{equation}
-%where
-%\begin{itemize}
-%	\item $n$ is the number of games played 
-%	\item $\hat{y_{i}}$ is the predicted probability of team 1 beating team 2
-%	\item $y_{i}$ is 1 if team 1 wins, 0 if team 2 wins
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Fine-tuning}
-%\begin{itemize}
-%	\item Idea: if we are very confident about a prediction, why not ``all-in''?
-%	\item A tradeoff between a small reward with large probability and a huge penalty with (hopefully) small probability
-%	\item How high is the penalty? For example, we turn a 0.9 prediction into 1
-%		\begin{itemize}
-%			\item If the outcome is 1, the score will improve by $\frac{-\ln(0.9)}{2279} = 4.623\times 10^{-5}$
-%			\item However if the outcome is 0, the penalty will be infinity
-%		\end{itemize}
-%	\item Our adjustments: make all predictions $>0.9$ be 1 and all predictions $<0.1$ be 0
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Results}
-%\begin{itemize}
-%	\item{MOV = Margin of Victory}
-%	\item HCA $=$ Home Court Advantage
-%	\item OAD $=$ Overtime as Draw
-%\end{itemize}
-%\begin{table}[h!]
-%\centering
-%\begin{tabular}{ | l | l | l | l |}
-%\hline
-%\textbf{Model} & \textbf{Log loss} & \textbf{Rank} & \textbf{Top} \\ \hline
-%Logistic Regression & 0.588910 & \nth{283} & 47.08\% \\ \hline
-%Na\"{i}ve TrueSkill & 0.527775 & \nth{11} & 1.67\% \\ \hline
-%MOV Unfolding & 0.527510 & \nth{11} & 1.67\% \\ \hline
-%HCA & 0.524036 & \nth{6} & 0.83\%\\ \hline
-%OAD & 0.520875 & \nth{6} & 0.83\% \\ \hline
-%Fine-tuning  & 0.513572 & \nth{5} & 0.67\%\\ \hline
-%%Fine-tuning  & 0.472260 & \nth{1} & 0.00\%\\ \hline
-%\end{tabular}
-%\caption{Final Results}\label{Ta:results}
-%\end{table}
-%\end{frame}
+
+\section{Travel Time Estimation}
+\begin{frame}
+\frametitle{Travel Time Estimation: Basic Ideas}
+
+\begin{defn}[\emph{Significant Edge}]
+A significant edge in a landmark graph $G=(V,E)$ is an edge $e \in E$ that has a support at least $m$, where $m$ is a parameter specified in advance.
+\end{defn}
+\begin{itemize}
+	\item <2-> Build a \textbf{predictive model} for travel time of each significant edge
+	\item <3-> Separate weekday's travel time from weekend's	
+	\item <4-> Evaluate results against Baidu's estimates
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Underlying Distribution}
+\begin{figure}[h!]
+\includegraphics[scale=0.5]{trvltime_scatter}
+\centering
+\caption{An example of travel time patterns}\label{Fig:wrkd_50m_trvltime}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Underlying Distribution}
+Possible Explanations
+\begin{itemize}
+	\item <1-> Drivers choose different routes to travel between the two landmarks
+	\item <2-> Drivers have different driving skills, preferences and behaviours
+	\item <3-> The GPS devices report locations \textbf{periodically}, therefore, durations like 60 seconds or 120 seconds are very common
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Travel Time Estimation: Clustering}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.4]{trvltime_clus}
+\includegraphics[scale = 0.4]{trvltime_neurons}
+\caption{An illustration of travel time clustering} 
+\end{figure}
+\end{frame}
+
 %
 %\begin{frame}
 %\frametitle{Conclusion}
