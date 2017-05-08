@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  4 MAY 2017 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.22)  8 MAY 2017 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1797,7 +1797,7 @@ Package pdftex.def Info: images/logo.png used on input line 339.
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 365.
+Package pdftex.def Info: images/logo.png used on input line 339.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [59
 
@@ -1847,14 +1847,21 @@ Package pdftex.def Info: images/logo.png used on input line 365.
  [65
 
 ]
-<images/wrkd_50m_reg.png, id=1848, 376.40625pt x 376.40625pt>
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 365.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [66
+
+]
+<images/wrkd_50m_reg.png, id=1875, 376.40625pt x 376.40625pt>
 File: images/wrkd_50m_reg.png Graphic file (type png)
 
 <use images/wrkd_50m_reg.png>
 Package pdftex.def Info: images/wrkd_50m_reg.png used on input line 376.
 (pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
 
-<images/wrkd_30m_reg.png, id=1849, 376.40625pt x 376.40625pt>
+<images/wrkd_30m_reg.png, id=1876, 376.40625pt x 376.40625pt>
 File: images/wrkd_30m_reg.png Graphic file (type png)
 
 <use images/wrkd_30m_reg.png>
@@ -1864,18 +1871,18 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 376.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [66
+ [67
 
  <./images/wrkd_50m_reg.png (PNG copy)> <./images/wrkd_30m_reg.png (PNG copy)>]
 
-<images/holi_50m_reg.png, id=1877, 376.40625pt x 376.40625pt>
+<images/holi_50m_reg.png, id=1904, 376.40625pt x 376.40625pt>
 File: images/holi_50m_reg.png Graphic file (type png)
 
 <use images/holi_50m_reg.png>
 Package pdftex.def Info: images/holi_50m_reg.png used on input line 388.
 (pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
 
-<images/holi_30m_reg.png, id=1878, 376.40625pt x 376.40625pt>
+<images/holi_30m_reg.png, id=1905, 376.40625pt x 376.40625pt>
 File: images/holi_30m_reg.png Graphic file (type png)
 
 <use images/holi_30m_reg.png>
@@ -1885,7 +1892,7 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 388.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [67
+ [68
 
  <./images/holi_50m_reg.png (PNG copy)> <./images/holi_30m_reg.png (PNG copy)>]
  (./main.toc)
@@ -1894,13 +1901,6 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 390.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [68
-
-]
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 405.
-(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [69
 
 ]
@@ -1908,18 +1908,25 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 405.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-
-[70
+ [70
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 405.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [71
+
+[71
 
 ]
-<images/shortest_path_demo.png, id=2018, 203.3196pt x 128.6406pt>
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 405.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [72
+
+]
+<images/shortest_path_demo.png, id=2045, 203.3196pt x 128.6406pt>
 File: images/shortest_path_demo.png Graphic file (type png)
 
 <use images/shortest_path_demo.png>
@@ -1929,67 +1936,80 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 415.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [72
-
- <./images/shortest_path_demo.png>] (./main.toc)
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 417.
-(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [73
 
-]
-File: images/logo.png Graphic file (type png)
+ <./images/shortest_path_demo.png>]
+<images/shortest_path.png, id=2075, 334.24875pt x 258.9675pt>
+File: images/shortest_path.png Graphic file (type png)
 
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+<use images/shortest_path.png>
+Package pdftex.def Info: images/shortest_path.png used on input line 430.
+(pdftex.def)             Requested size: 167.12396pt x 129.48341pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 430.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [74
 
-]
+ <./images/shortest_path.png>] (./main.toc)
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+Package pdftex.def Info: images/logo.png used on input line 432.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [75
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+Package pdftex.def Info: images/logo.png used on input line 443.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-
-[76
+ [76
 
 ]
 File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 443.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [77
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+Package pdftex.def Info: images/logo.png used on input line 443.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
  [78
 
 ]
 File: images/logo.png Graphic file (type png)
-
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 428.
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 443.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
- [79
+
+[79
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 435.
+Package pdftex.def Info: images/logo.png used on input line 443.
 (pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
-Package atenddvi Info: Last page = 80.
  [80
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 443.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+ [81
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 450.
+(pdftex.def)             Requested size: 79.47458pt x 28.45274pt.
+Package atenddvi Info: Last page = 82.
+ [82
 
 ]
 \tf@nav=\write6
@@ -2001,11 +2021,11 @@ Package atenddvi Info: Last page = 80.
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 437.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 452.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 497894988933DC38FF75CBFB07533B42;326.
 
@@ -2013,13 +2033,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  ) 
 Here is how much of TeX's memory you used:
- 26312 strings out of 493014
- 508957 string characters out of 6133351
- 561049 words of memory out of 5000000
- 29160 multiletter control sequences out of 15000+600000
+ 26325 strings out of 493014
+ 509167 string characters out of 6133351
+ 561108 words of memory out of 5000000
+ 29167 multiletter control sequences out of 15000+600000
  12662 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,64p,10410b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2036,10 +2056,10 @@ r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (80 pages, 1315479 bytes).
+Output written on main.pdf (82 pages, 1418759 bytes).
 PDF statistics:
- 2348 PDF objects out of 2487 (max. 8388607)
- 2193 compressed objects within 22 object streams
- 183 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2405 PDF objects out of 2487 (max. 8388607)
+ 2245 compressed objects within 23 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

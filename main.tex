@@ -332,8 +332,8 @@ Possible Explanations
 An optimism index indicates how optimistic a driver feels about his or her driving skills. A driver with an optimism index of $p\%$ usually drives faster than $(1 - p)\%$ drivers under similar road conditions.
 \end{defn}
 \begin{itemize}
-	\item <1-> Calculate and store $\alpha$ and $\beta$ for each 30-minute window
-	\item <2-> Use optimism index $p$ to find out travel time
+	\item <2-> Calculate and store $\alpha$ and $\beta$ for each 30-minute window
+	\item <3-> Use optimism index $p$ to find out travel time
 \end{itemize}
 \end{frame}
 
@@ -342,9 +342,9 @@ An optimism index indicates how optimistic a driver feels about his or her drivi
 \begin{itemize}
 	\item <2-> Select the most significant 150 edges (pairs of landmarks)
 	\item <3-> Sample 20\% of trips passing through each pair randomly
-	\item <4-> Calculate travel time of each trip with optimism index $p = 0.5$
-	\item <5-> Use Baidu Maps' API to give real-time estimates
-	\item <6-> Compare Baidu's estimates with the \textbf{median} travel time 
+	\item <4-> Calculate travel time of \textbf{each edge} with optimism index $p = 0.5$
+	\item <5-> Use Baidu Maps' API to give real-time estimates for \textbf{each trip}
+	\item <6-> Compare this project's estimates with the \textbf{median} of Baidu's estimates
 \end{itemize}
 \visible <7->{
 \begin{table}[h!]
@@ -409,6 +409,21 @@ A time-dependent graph $G=(V,E)$ with a dynamic weight function $w : E,t \righta
 \includegraphics[scale=1]{shortest_path_demo}
 \centering
 \caption{An example of modified Dijkstra's algorithm}\label{Fig:dynamic_update}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Shortest Path Calculation: Real Test Example}
+\begin{itemize}
+	\item Departing at 8:25 p.m.
+	\item 19.08 mins v.s. 21 mins (Baidu's estimate)
+\end{itemize}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.5]{shortest_path}
+\centering
+\caption{An example of shortest path query}\label{Fig:test_eg}
 \end{figure}
 
 \end{frame}

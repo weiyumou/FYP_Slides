@@ -9,8 +9,9 @@
 \beamer@slide {Ta:frequency_count}{44}
 \beamer@slide {Fig:wrkd_50m_trvltime}{51}
 \beamer@slide {Def:opti_index}{57}
-\beamer@slide {Ta:eval_res}{59}
-\beamer@slide {Fig:wrkd_reg}{66}
-\beamer@slide {Fig:holi_reg}{67}
-\beamer@slide {Def:fifo_graph}{69}
-\beamer@slide {Fig:dynamic_update}{72}
+\beamer@slide {Ta:eval_res}{60}
+\beamer@slide {Fig:wrkd_reg}{67}
+\beamer@slide {Fig:holi_reg}{68}
+\beamer@slide {Def:fifo_graph}{70}
+\beamer@slide {Fig:dynamic_update}{73}
+\beamer@slide {Fig:test_eg}{74}
